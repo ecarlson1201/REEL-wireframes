@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./float-grid.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-6">
+            <form action="search">Search:
+                <input type="text">
+            </form>
+        </div>
+
+        <div class="col-6">
+            <div class="dropdown">
+                <button class="dropbtn">Sort By</button>
+                <div class="dropdown-content">
+                    <a href="#">Alphabetically (A-Z)</a>
+                    <a href="#">Alphabetically (Z-A)</a>
+                    <a href="#">% Saved (High-Low)</a>
+                    <a href="#">% Saved (Low-High)</a>
+                    <a href="#">Total (High-Low)</a>
+                    <a href="#">Total (Low-High)</a>
+                    <a href="#">Status (Active)</a>
+                    <a href="#">Status (Paused)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row item">
+            <div class="col-3">
+                <h2>BMW 328ci</h2>
+                <img src="./assets/fa-image.png" alt="placeholder" class="placeholder">
+            </div>
+            <div class="col-2 status">
+                <h3 class="active">Active</h3><br>
+                <button>Pause</button>
+            </div>
+            <div class="col-6 percent-bar">PROGRESS BAR</div>
+            <div class="col-1 total">
+                <span>Percent Complete: 30%</span> <br>
+                <span>Total: 35,000</span>
+        </div>
+    </div>
+
+    <div class="row item">
+            <div class="col-3">
+                <h2>Gucci Belt</h2>
+                <img src="./assets/fa-image.png" alt="placeholder" class="placeholder">
+            </div>
+            <div class="col-2 status">
+                <h3 class="paused">Paused</h3><br>
+                <button>Resume</button>
+            </div>
+            <div class="col-6 percent-bar">PROGRESS BAR</div>
+            <div class="col-1 total">
+                <span>Percent Complete: 90%</span> <br>
+                <span>Total: 400</span>
+        </div>
+    </div>
+
+    <div class="row item">
+            <div class="col-3">
+                <h2>Computer</h2>
+                <img src="./assets/fa-image.png" alt="placeholder" class="placeholder">
+            </div>
+            <div class="col-2 status">
+                <h3 class="paused">Paused</h3><br>
+                <button>Resume</button>
+            </div>
+            <div class="col-6 percent-bar">PROGRESS BAR</div>
+            <div class="col-1 total">
+                <span>Percent Complete: 50%</span> <br>
+                <span>Total: 1,200</span>
+        </div>
+    </div>
+</body>
+
+</html>
